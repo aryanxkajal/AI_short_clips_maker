@@ -49,7 +49,7 @@ def generate_openai_voiceover(text, output_path):
         file.write(response.content)
     print(f"Voiceover saved to {output_path}")
 
-def create_reel(city_name, logo_path=None):
+def create_reel(city_name):
     clips = []
     # Get a fact about the city
     fact = get_city_fact(city_name)
